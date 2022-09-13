@@ -1,0 +1,49 @@
+
+.signup {
+    height: 100vh;
+    background-color:antiquewhite;
+}
+
+.signup nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px;
+    align-items: baseline;
+}
+
+.topsignup {
+    display: flex;
+    height: 80vh;
+}
+
+.topsignupleft {
+    max-width: 45%;
+    padding: 40px 10px 0px 80px;
+}
+
+.topsignupleft h1 {
+    margin: 60px 0;
+}
+
+
+.topsignupleft p {
+    max-width: 80%;
+    margin: 20px 0;
+}
+
+.topsignupleft button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.bottomsignup {
+    display: flex;
+    justify-content: space-around;
+}
+
+.topsignupright {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
