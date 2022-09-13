@@ -12,7 +12,6 @@
 
 .toplanding {
     display: flex;
-    /* background-color: green; */
     height: 65vh;
 }
 
@@ -39,7 +38,6 @@
 .bottomlanding {
     display: flex;
     justify-content: space-around;
-    /* padding: 30px 0 0 0; */
 }
 
 .decocard {
@@ -47,5 +45,4 @@
     border: 2px solid black;
     border-radius: 5px;
     padding: 10px;
-
 }
