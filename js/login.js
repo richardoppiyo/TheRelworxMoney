@@ -13,13 +13,13 @@ let userPage = document.getElementById('user');
 const logginIn = () => {
     landingPage.classList.add('hidden');
     signUpPage.classList.add('hidden');
-    userPage.classList.add('hidden');
+    // userPage.classList.add('hidden');
     logInPage.classList.remove('hidden');
 }
 
 const signingUp = () => {
     landingPage.classList.add('hidden');
-    userPage.classList.add('hidden');
+    // userPage.classList.add('hidden');
     logInPage.classList.add('hidden');
     signUpPage.classList.remove('hidden');
 }
