@@ -16,12 +16,12 @@
     <title>TheRealWorx</title>
 </head>
 <body>
-    <section class="landing">
+    <section id="landing" class="landing">
         <nav>
             <h1>TheRealworx Pay</h1>
             <div>
-                <button type="submit">Log In</button>
-                <button type="submit">Sign Up</button>
+                <button type="button" id="loginbtn" >Log In</button>
+                <button type="submit" id="signupbtn">Sign Up</button>
             </div>
         </nav>
         <div class="toplanding">
@@ -53,11 +53,11 @@
             </div>
         </div>
     </section>
-    <section class="signup hidden">
+    <section id="signup" class="signup hidden">
         <nav>
             <h1>TheRealworx Pay</h1>
             <div>
-                <button type="submit">Log In</button>
+                <button type="submit" id="loginbtn2">Log In</button>
             </div>
         </nav>
         <div class="topsignup">
@@ -82,11 +82,11 @@
             </div>
         </div>
     </section>
-    <section class="login hidden">
+    <section id="login" class="login hidden">
         <nav>
             <h1>TheRealworx Pay</h1>
             <div>
-                <button type="submit">Sign In</button>
+                <button type="submit" id="signupbtn2">Sign Up</button>
             </div>
         </nav>
         <div class="toplogin">
@@ -99,7 +99,7 @@
                 </p>
             </div>
             <div class="toploginright">
-                <h2>Enter your details below:</h2>
+                <h2>Enter your email and password to log in</h2>
                 <form class="loginform">
                   <input type="email" id="email" name="lname" placeholder="Email Address">
                   <input type="password" id="pass" name="lname"  placeholder="Password">
@@ -112,7 +112,7 @@
             </div>
         </div>
     </section>
-    <section class="user hidden">
+    <section  id="user" class="user hidden">
         <nav>
             <h1>TheRealworx Pay</h1>
             <div>
@@ -171,5 +171,18 @@
             </div>
         </div>
     </section>
+
+    <!-- <script>
+        let logInBtn = document.getElementById('loginbtn');
+
+
+
+        logInBtn.addEventListener('click', () => {
+            alert('hi');
+            // landingPage.classList.remove('hidden');
+            // logInPage.classList.add('hidden');
+        });
+    </script> -->
+    <script src="js/login.js"></script>
 </body>
 </html>
