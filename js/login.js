@@ -49,5 +49,7 @@ let userArray = [
 ]
 
 
-
-       
+const logInSubmit = (e) => {
+    e.preventDefault();
+    console.log('I am here');
+}
