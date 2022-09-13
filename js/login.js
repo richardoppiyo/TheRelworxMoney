@@ -30,6 +30,24 @@ signUpBtn.addEventListener('click', () => signingUp());
 signUpBtn2.addEventListener('click', () => signingUp());
 
 
+let userArray = [ 
+    {
+    id: 1,
+    fname: 'Richard',
+    lname: 'Opiyo',
+    phone: "0729384848",
+    password: 'qwerty'
+    },
+    {
+        id: 2,
+        fname: 'Michael',
+        lname: 'Joseph',
+        phone: "0729984848",
+        password: 'qwerty'
+        },
+
+]
+
 
 
        
