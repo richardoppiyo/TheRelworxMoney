@@ -1,0 +1,80 @@
+.user {
+    height: 100vh;
+    background-color: aliceblue
+}
+
+.user nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px;
+    align-items: baseline;
+}
+
+.topuser {
+    display: flex;
+    height: 65vh;
+}
+
+.topuserleft {
+    min-width: 50%;
+    max-width: 55%;
+    padding: 40px 10px 0px 80px;
+}
+
+.topuserleft h1 {
+    margin: 60px 0;
+}
+
+
+.topuserleft p {
+    max-width: 50%;
+    margin: 20px 0;
+}
+
+.topuserleft button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.bottomuser {
+    display: flex;
+    justify-content: space-around;
+}
+
+.decocard {
+    width: 180px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.sendmoney {
+    display: flex;
+    flex-direction: column;
+    margin: 3px;
+}
+
+.sendmoney input {
+    width: 50%;
+    margin: 3px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.balance {
+    display: flex;
+}
+
+.balance p {
+    margin: 0 5px;
+}
+
+.transactions {
+    display: flex;
+    margin: 10px;
+}
+
+li {
+    list-style: none;
+}
