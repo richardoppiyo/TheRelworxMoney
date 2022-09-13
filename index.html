@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/landing.css">
     <link rel="stylesheet" href="./css/signup.css">
     <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/user.css">
+    <link rel="stylesheet" href="./css/pages.css">
 
 
     <title>TheRealWorx</title>
@@ -110,28 +112,51 @@
             </div>
         </div>
     </section>
-    <section class="landing">
+    <section class="user hidden">
         <nav>
             <h1>TheRealworx Pay</h1>
             <div>
                 <button type="submit">Log Out</button>
             </div>
         </nav>
-        <div class="toplanding">
-            <div class="toplandingleft">
-                <h1>Saving Money made easy</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+        <div class="topuser">
+            <div class="topuserleft">
+                <p>Hello User. Welcome to RealWorx</p>
+                <div class="balance">
+                    <p><strong>My balance:</strong></p>
+                    <p>$ 3000</p>
+                </div>
+                <button type="submit">Send Money</button>
+                <form class="sendmoney">
+                    <input type="email" id="email" name="lname" placeholder="Email Address">
+                    <input type="password" id="pass" name="lname"  placeholder="Password">
+                    <input type="submit" value="Log In">
+                  </form> 
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
                     molestiae quas vel sint commodiv
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
                     molestiae quas vel sint commodiv
-                </p>
-                <button type="submit">Get Started</button>
+                </p> 
             </div>
             <div>
-                <h3>This section is for image</h3>
+                <h3>My current Transactions:</h3>
+                <li>
+                    <ul class="transactions">
+                        <p>Richard</p>
+                        <p>$ 1000</p>
+                    </ul>
+                    <ul class="transactions">
+                        <p>Kelly</p>
+                        <p>$ 1000</p>
+                    </ul>
+                    <ul class="transactions">
+                        <p>Anne</p>
+                        <p>$ 1000</p>
+                    </ul>
+                </li>
             </div>
         </div>
-        <div class="bottomlanding">
+        <div class="bottomuser">
             <div class="decocard">
                 <h4>Deco card</h4>
                 <p>This card is for decoration purposes</p>
