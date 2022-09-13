@@ -1,0 +1,48 @@
+.landing {
+    height: 100vh;
+    background-color: aliceblue
+}
+
+.landing nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px;
+    align-items: baseline;
+}
+
+.toplanding {
+    display: flex;
+    height: 65vh;
+}
+
+.toplandingleft {
+    max-width: 55%;
+    padding: 40px 10px 0px 80px;
+}
+
+.toplandingleft h1 {
+    margin: 60px 0;
+}
+
+
+.toplandingleft p {
+    max-width: 80%;
+    margin: 20px 0;
+}
+
+.toplandingleft button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.bottomlanding {
+    display: flex;
+    justify-content: space-around;
+}
+
+.decocard {
+    width: 180px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
