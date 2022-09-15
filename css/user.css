@@ -55,7 +55,8 @@
     margin: 3px;
 }
 
-.sendmoney input {
+.sendmoney input,
+select {
     width: 50%;
     margin: 3px;
     height: 40px;

@@ -9,17 +9,18 @@ let signUpPage = document.getElementById('signup');
 let logInPage = document.getElementById('login');
 let userPage = document.getElementById('user');
 
+let sendMoneyBtn = document.getElementById('send-moneybtn');
+let sendMoneyForm = document.getElementById('sendmoney');
+
 
 const logginIn = () => {
     landingPage.classList.add('hidden');
     signUpPage.classList.add('hidden');
-    // userPage.classList.add('hidden');
     logInPage.classList.remove('hidden');
 }
 
 const signingUp = () => {
     landingPage.classList.add('hidden');
-    // userPage.classList.add('hidden');
     logInPage.classList.add('hidden');
     signUpPage.classList.remove('hidden');
 }
@@ -29,6 +30,10 @@ logInBtn2.addEventListener('click', () => logginIn());
 signUpBtn.addEventListener('click', () => signingUp());
 signUpBtn2.addEventListener('click', () => signingUp());
 
+sendMoneyBtn.addEventListener('click', () => {
+    console.log('hello')
+    // sendMoneyForm.classList.remove('hidden');
+    });
 
 let userArray = [ 
     {
@@ -48,8 +53,8 @@ let userArray = [
 
 ]
 
-
 const logInSubmit = (e) => {
     e.preventDefault();
     console.log('I am here');
 }
+

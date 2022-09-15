@@ -30,11 +30,17 @@
                     <p><strong>My balance:</strong></p>
                     <p>$ 3000</p>
                 </div>
-                <button type="submit">Send Money</button>
-                <form class="sendmoney">
-                    <input type="email" id="email" name="lname" placeholder="Email Address">
-                    <input type="password" id="pass" name="lname"  placeholder="Password">
-                    <input type="submit" value="Log In">
+                <button type="button" id="send-moneybtn">Send Money</button>
+                <form id="sendmoney" class="sendmoney hidden">
+                    <label for="recipient">Choose a Person:</label>
+                    <select name="recipient" id="cars">
+                        <option value="Rich">Rich</option>
+                        <option value="Sam">Sam</option>
+                        <option value="Kelly">Kelly</option>
+                        <option value="Audrey">Audrey</option>
+                    </select>
+                    <input type="number" id="email" name="amount" placeholder="Amount">
+                    <input type="submit" value="Send">
                   </form> 
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
                     molestiae quas vel sint commodiv
@@ -76,6 +82,6 @@
         </div>
     </section>
 
-    <script src="js/login.js"></script>
+    <script src="js/user.js"></script>
 </body>
 </html>
