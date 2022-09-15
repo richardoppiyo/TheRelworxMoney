@@ -30,31 +30,63 @@ logInBtn2.addEventListener('click', () => logginIn());
 signUpBtn.addEventListener('click', () => signingUp());
 signUpBtn2.addEventListener('click', () => signingUp());
 
-sendMoneyBtn.addEventListener('click', () => {
-    console.log('hello')
-    // sendMoneyForm.classList.remove('hidden');
-    });
+// sendMoneyBtn.addEventListener('click', () => {
+//     console.log('hello')
+//     // sendMoneyForm.classList.remove('hidden');
+//     });
 
+// const logInSubmit = (e) => {
+//     e.preventDefault();
+//     console.log('I am here');
+// }
 let userArray = [ 
     {
     id: 1,
     fname: 'Richard',
     lname: 'Opiyo',
     phone: "0729384848",
-    password: 'qwerty'
+    amount: 5000,
+    password: 'qwerty',
+    email: 'rich@rich.com'
     },
     {
         id: 2,
         fname: 'Michael',
         lname: 'Joseph',
         phone: "0729984848",
-        password: 'qwerty'
+        amount: 3000,
+        password: 'qwerty',
+        email: 'test@test.com'
         },
-
 ]
 
-const logInSubmit = (e) => {
-    e.preventDefault();
-    console.log('I am here');
+function verifyUser (email,pass) {
+    let flag = false;
+
+    console.log('hello 1');
+
+    for(let i=0; i<userArray.length; i++ ) {
+        if(userArray[i].email === email && userArray[i].password === pass) {
+            flag = true;
+            alert('logged in Succesfully');
+            break;
+        }
+    }
+    
+    if(flag === false) {
+        console.log('hello 2');
+        alert('Please Enter the correct credentials or sign up')
+        return false;
+    }
+    return true;
 }
 
+
+function handleLogIn () {
+    let myEmail = document.getElementById('loginemail').value;
+    let myPass = document.getElementById('loginpass').value;
+    
+    if(!verifyUser(myEmail,myPass)){
+        return false;
+    }
+}

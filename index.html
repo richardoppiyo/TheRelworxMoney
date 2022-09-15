@@ -100,12 +100,12 @@
             </div>
             <div class="toploginright">
                 <h2>Enter your email and password to log in</h2>
-                <form class="loginform" action="./user.html" method="POST" onsubmit="logInSubmit()">
-                  <input type="email" id="email" name="lname" placeholder="Email Address">
-                  <input type="password" id="pass" name="lname"  placeholder="Password">
+                <form class="loginform" action="./user.html" method="POST" onsubmit="return handleLogIn()">
+                  <input type="email" id="loginemail" name="lname" placeholder="Email Address">
+                  <input type="password" id="loginpass" name="lname"  placeholder="Password">
                   <input type="submit" value="Log In">
                 </form>
-                
+                <p class="loginerror"></p>
                 <p>Note that the form itself is not visible.</p>
                 
                 <p>Also note that the default width of text input fields is 20 characters.</p>

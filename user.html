@@ -31,15 +31,11 @@
                     <p>$ 3000</p>
                 </div>
                 <button type="button" id="send-moneybtn">Send Money</button>
-                <form id="sendmoney" class="sendmoney hidden">
+                <form  action="" method="post" id="sendmoney" class="sendmoney hidden" onsubmit="return sendMoneyToUser()">
                     <label for="recipient">Choose a Person:</label>
-                    <select name="recipient" id="cars">
-                        <option value="Rich">Rich</option>
-                        <option value="Sam">Sam</option>
-                        <option value="Kelly">Kelly</option>
-                        <option value="Audrey">Audrey</option>
+                    <select name="recipient" id="recipient">
                     </select>
-                    <input type="number" id="email" name="amount" placeholder="Amount">
+                    <input type="number" id="amount" name="amount" placeholder="Amount">
                     <input type="submit" value="Send">
                   </form> 
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
